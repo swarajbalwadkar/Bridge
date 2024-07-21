@@ -1,0 +1,115 @@
+.main_box{
+    background: url(./assets/wallpapersden.com_anime-one-piece-8k-red-minimal_1920x1080.jpg);
+    background-size: cover;
+    height: 100vh;
+    
+    
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~#sidebar_menu{
+    background-color: rgba(240, 248, 255, 0.9);
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+
+#check:checked ~.bars{
+    opacity: 0;
+}
+
+#check:checked ~.cross{
+    opacity: 1;
+    color: rgb(28, 25, 25);
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    right: 50px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#check:checked ~.search-container{
+    display: none;
+}
+
+.bars i{
+    color: black;
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.cross i {
+    opacity: 0;
+}
+
+.bars  :hover {
+    font-size: 35px;
+}
+
+.cross i:hover {
+    font-size: 30px;
+}
+
+#sidebar_menu{
+    display: none;
+}
+
+.icons{
+    height: 30px;
+    width: 30px;
+    margin: 80px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.icons:hover{
+    height: 40px;
+    width: 40px;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 24px;
+    padding: 0 10px;
+}
+
+.search-input {
+    border: none;
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 24px 0 0 24px;
+}
+
+.search-button {
+    border-radius: 0 24px 24px 0;
+    padding: 0 15px;
+}
+
+.search-input:focus, .search-button:focus {
+    box-shadow: none;
+}
