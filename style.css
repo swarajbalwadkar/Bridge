@@ -25,6 +25,7 @@
 
 /* #check:checked ~.bars{
     transform: rotate('90');
+    display:none;
 } */
 
 /* #check:checked ~.cross{
